@@ -1,0 +1,233 @@
+digraph G {
+  ratio="fill";
+  size="4,5!";
+  org_openrewrite_staticanalysis_AtomicPrimitiveEqualsUsesGet [label="Atomic Boolean,
+Integer, and Long
+equality checks
+compare their values"];
+  org_openrewrite_staticanalysis_BigDecimalDoubleConstructorRecipe [label="`new
+BigDecimal(double)`
+should not be used"];
+  org_openrewrite_staticanalysis_BigDecimalRoundingConstantsToEnums [label="`BigDecimal`
+rounding constants
+to `RoundingMode`
+enums"];
+  org_openrewrite_staticanalysis_BooleanChecksNotInverted [label="Boolean checks
+should not be
+inverted"];
+  org_openrewrite_staticanalysis_CaseInsensitiveComparisonsDoNotChangeCase [label="CaseInsensitive
+comparisons do not
+alter case"];
+  org_openrewrite_staticanalysis_CatchClauseOnlyRethrows [label="Catch clause should
+do more than just
+rethrow"];
+  org_openrewrite_staticanalysis_ChainStringBuilderAppendCalls [label="Chain
+`StringBuilder.append()`
+calls"];
+  org_openrewrite_staticanalysis_CovariantEquals [label="Covariant equals"];
+  org_openrewrite_staticanalysis_DefaultComesLast [label="Default comes last"];
+  org_openrewrite_staticanalysis_EmptyBlock [label="Remove empty blocks"];
+  org_openrewrite_staticanalysis_EqualsAvoidsNull [label="Equals avoids null"];
+  org_openrewrite_staticanalysis_ExplicitInitialization [label="Explicit
+initialization"];
+  org_openrewrite_staticanalysis_ExternalizableHasNoArgsConstructor [label="`Externalizable`
+classes have
+no-arguments
+constructor"];
+  org_openrewrite_staticanalysis_FinalizePrivateFields [label="Finalize private
+fields"];
+  org_openrewrite_staticanalysis_FallThrough [label="Fall through"];
+  org_openrewrite_staticanalysis_FinalClass [label="Finalize classes
+with private
+constructors"];
+  org_openrewrite_staticanalysis_FixStringFormatExpressions [label="Fix `String#format`
+and
+`String#formatted`
+expressions"];
+  org_openrewrite_staticanalysis_ForLoopIncrementInUpdate [label="`for` loop counters
+incremented in
+update"];
+  org_openrewrite_staticanalysis_IndexOfChecksShouldUseAStartPosition [label="Use `indexOf(String,
+int)`"];
+  org_openrewrite_staticanalysis_IndexOfReplaceableByContains [label="`indexOf()`
+replaceable by
+`contains()`"];
+  org_openrewrite_staticanalysis_IndexOfShouldNotCompareGreaterThanZero [label="`indexOf` should not
+compare greater than
+zero"];
+  org_openrewrite_staticanalysis_InlineVariable [label="Inline variable"];
+  org_openrewrite_staticanalysis_IsEmptyCallOnCollections [label="Use
+`Collection#isEmpty()`
+instead of comparing
+`size()`"];
+  org_openrewrite_staticanalysis_LambdaBlockToExpression [label="Simplify lambda
+blocks to
+expressions"];
+  org_openrewrite_staticanalysis_MethodNameCasing [label="Method name casing"];
+  org_openrewrite_staticanalysis_MinimumSwitchCases [label="`switch` statements
+should have at least
+3 `case` clauses"];
+  org_openrewrite_staticanalysis_ModifierOrder [label="Modifier order"];
+  org_openrewrite_staticanalysis_MultipleVariableDeclarations [label="No multiple variable
+declarations"];
+  org_openrewrite_staticanalysis_NeedBraces [label="Fix missing braces"];
+  org_openrewrite_staticanalysis_NestedEnumsAreNotStatic [label="Nested enums are not
+static"];
+  org_openrewrite_staticanalysis_NewStringBuilderBufferWithCharArgument [label="Change
+`StringBuilder` and
+`StringBuffer`
+character
+constructor argument
+to `String`"];
+  org_openrewrite_staticanalysis_NoDoubleBraceInitialization [label="No double brace
+initialization"];
+  org_openrewrite_staticanalysis_NoEmptyCollectionWithRawType [label="Use
+`Collections#emptyList()`,
+`emptyMap()`, and
+`emptySet()`"];
+  org_openrewrite_staticanalysis_NoEqualityInForCondition [label="Use comparison
+rather than equality
+checks in for
+conditions"];
+  org_openrewrite_staticanalysis_NoFinalizer [label="Remove `finalize()`
+method"];
+  org_openrewrite_staticanalysis_NoPrimitiveWrappersForToStringOrCompareTo [label="No primitive
+wrappers for
+#toString() or
+#compareTo(..)"];
+  org_openrewrite_staticanalysis_NoRedundantJumpStatements [label="Jump statements
+should not be
+redundant"];
+  org_openrewrite_staticanalysis_NoToStringOnStringType [label="Unnecessary
+String#toString()"];
+  org_openrewrite_staticanalysis_NoValueOfOnStringType [label="Unnecessary
+String#valueOf(..)"];
+  org_openrewrite_staticanalysis_ObjectFinalizeCallsSuper [label="`finalize()` calls
+super"];
+  org_openrewrite_staticanalysis_PrimitiveWrapperClassConstructorToValueOf [label="Use primitive
+wrapper `valueOf`
+method"];
+  org_openrewrite_staticanalysis_RedundantFileCreation [label="Redundant file
+creation"];
+  org_openrewrite_staticanalysis_RemoveExtraSemicolons [label="Remove extra
+semicolons"];
+  org_openrewrite_staticanalysis_RenameLocalVariablesToCamelCase [label="Reformat local
+variable names to
+camelCase"];
+  org_openrewrite_staticanalysis_RenameMethodsNamedHashcodeEqualOrTostring [label="Rename methods named
+`hashcode`, `equal`,
+or `tostring`"];
+  org_openrewrite_staticanalysis_RenamePrivateFieldsToCamelCase [label="Reformat private
+field names to
+camelCase"];
+  org_openrewrite_staticanalysis_ReplaceLambdaWithMethodReference [label="Use method
+references in lambda"];
+  org_openrewrite_staticanalysis_ReplaceStringBuilderWithString [label="Replace
+StringBuilder.append()
+with String"];
+  org_openrewrite_staticanalysis_SimplifyBooleanExpression [label="Simplify boolean
+expression"];
+  org_openrewrite_staticanalysis_SimplifyBooleanReturn [label="Simplify boolean
+return"];
+  org_openrewrite_staticanalysis_StaticMethodNotFinal [label="Static methods not
+final"];
+  org_openrewrite_staticanalysis_StringLiteralEquality [label="Use
+`String.equals()` on
+String literals"];
+  org_openrewrite_staticanalysis_UnnecessaryCloseInTryWithResources [label="Unnecessary close in
+try-with-resources"];
+  org_openrewrite_staticanalysis_UnnecessaryExplicitTypeArguments [label="Unnecessary explicit
+type arguments"];
+  org_openrewrite_staticanalysis_UnnecessaryParentheses [label="Remove unnecessary
+parentheses"];
+  org_openrewrite_staticanalysis_UnnecessaryPrimitiveAnnotations [label="Remove Nullable and
+CheckForNull
+annotations from
+primitives"];
+  org_openrewrite_staticanalysis_UpperCaseLiteralSuffixes [label="Upper case literal
+suffixes"];
+  org_openrewrite_staticanalysis_UseDiamondOperator [label="Use diamond operator"];
+  org_openrewrite_staticanalysis_UseJavaStyleArrayDeclarations [label="No C-style array
+declarations"];
+  org_openrewrite_staticanalysis_WhileInsteadOfFor [label="Prefer `while` over
+`for` loops"];
+  org_openrewrite_staticanalysis_WriteOctalValuesAsDecimal [label="Write octal values
+as decimal"];
+  org_openrewrite_kotlin_cleanup_EqualsMethodUsage [label="Structural equality
+tests should use
+`==` or `!=`"];
+  org_openrewrite_kotlin_cleanup_ImplicitParameterInLambda [label="`it` shouldn't be
+used as a lambda
+parameter name"];
+  org_openrewrite_kotlin_cleanup_ReplaceCharToIntWithCode [label="Replace
+`Char#toInt()` with
+`Char#code`"];
+  org_openrewrite_staticanalysis_CommonStaticAnalysis [label="Common static
+analysis issues"];
+  org_openrewrite_config_CompositeRecipe [label="org.openrewrite.config.CompositeRecipe"];
+  org_openrewrite_config_CompositeRecipe -> org_openrewrite_staticanalysis_CommonStaticAnalysis;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_AtomicPrimitiveEqualsUsesGet;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_BigDecimalDoubleConstructorRecipe;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_BigDecimalRoundingConstantsToEnums;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_BooleanChecksNotInverted;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_CaseInsensitiveComparisonsDoNotChangeCase;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_CatchClauseOnlyRethrows;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_ChainStringBuilderAppendCalls;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_CovariantEquals;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_DefaultComesLast;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_EmptyBlock;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_EqualsAvoidsNull;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_ExplicitInitialization;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_ExternalizableHasNoArgsConstructor;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_FinalizePrivateFields;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_FallThrough;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_FinalClass;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_FixStringFormatExpressions;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_ForLoopIncrementInUpdate;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_IndexOfChecksShouldUseAStartPosition;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_IndexOfReplaceableByContains;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_IndexOfShouldNotCompareGreaterThanZero;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_InlineVariable;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_IsEmptyCallOnCollections;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_LambdaBlockToExpression;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_MethodNameCasing;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_MinimumSwitchCases;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_ModifierOrder;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_MultipleVariableDeclarations;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NeedBraces;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NestedEnumsAreNotStatic;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NewStringBuilderBufferWithCharArgument;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NoDoubleBraceInitialization;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NoEmptyCollectionWithRawType;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NoEqualityInForCondition;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NoFinalizer;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NoPrimitiveWrappersForToStringOrCompareTo;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NoRedundantJumpStatements;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NoToStringOnStringType;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_NoValueOfOnStringType;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_ObjectFinalizeCallsSuper;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_PrimitiveWrapperClassConstructorToValueOf;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_RedundantFileCreation;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_RemoveExtraSemicolons;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_RenameLocalVariablesToCamelCase;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_RenameMethodsNamedHashcodeEqualOrTostring;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_RenamePrivateFieldsToCamelCase;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_ReplaceLambdaWithMethodReference;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_ReplaceStringBuilderWithString;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_SimplifyBooleanExpression;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_SimplifyBooleanReturn;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_StaticMethodNotFinal;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_StringLiteralEquality;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_UnnecessaryCloseInTryWithResources;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_UnnecessaryExplicitTypeArguments;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_UnnecessaryParentheses;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_UnnecessaryPrimitiveAnnotations;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_UpperCaseLiteralSuffixes;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_UseDiamondOperator;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_UseJavaStyleArrayDeclarations;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_WhileInsteadOfFor;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_staticanalysis_WriteOctalValuesAsDecimal;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_kotlin_cleanup_EqualsMethodUsage;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_kotlin_cleanup_ImplicitParameterInLambda;
+  org_openrewrite_staticanalysis_CommonStaticAnalysis -> org_openrewrite_kotlin_cleanup_ReplaceCharToIntWithCode;
+}
